@@ -1,108 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Santander Sabor y Cultura</title>
-
-    <!-- Estilos modernos/minimalistas -->
-    <style>
-        :root {
-            --primario: #047857;
-            --secundario: #fbbf24;
-            --fondo: #f1f5f9;
-            --texto: #1e293b;
-        }
-
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: var(--fondo);
-            color: var(--texto);
-        }
-
-        header {
-            background: var(--primario);
-            color: white;
-            padding: 20px 40px;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            background: #065f46;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        nav a:hover {
-            color: var(--secundario);
-        }
-
-        .hero {
-            padding: 80px 20px;
-            text-align: center;
-            background: white;
-        }
-
-        .hero h2 {
-            font-size: 2rem;
-            color: var(--primario);
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            font-size: 1.1rem;
-        }
-
-        footer {
-            margin-top: 50px;
-            background: #1e293b;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Santandereana del Sabor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Santander Sabor y Cultura</h1>
+
+    <!-- PORTADA -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Ruta Santandereana del Sabor</h1>
+            <p>Una experiencia sensorial que resalta la gastronomía y cultura de Santander.</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Gastronomía</a>
-        <a href="#">Ruta</a>
-        <a href="#">Municipios</a>
-        <a href="#">Recomendaciones</a>
-    </nav>
+    <!-- INFORMACIÓN GENERAL -->
+    <section class="sobre">
+        <h2>Información General</h2>
 
-    <section class="hero">
-        <h2>Bienvenido a la Ruta Santander Sabor</h2>
+        <p><strong>Región:</strong> Región Andina</p>
+        <p><strong>Duración del recorrido:</strong> 1 día</p>
+
+        <h3>Objetivo de la Ruta</h3>
         <p>
-            Descubre la riqueza gastronómica, cultural y turística del corazón de Santander.
-            Muy pronto encontrarás aquí toda la información completa organizada desde tu archivo Excel.
+            El objetivo principal de esta ruta es reconocer y exaltar la riqueza gastronómica 
+            del departamento de Santander. A través de experiencias culinarias, los 
+            visitantes podrán descubrir preparaciones tradicionales, ingredientes 
+            autóctonos y técnicas ancestrales que forman parte de la identidad de la región.
+        </p>
+
+        <h3>Público Objetivo</h3>
+        <ul>
+            <li>Turistas nacionales e internacionales interesados en gastronomía</li>
+            <li>Exploradores culturales</li>
+            <li>Familias, estudiantes y grupos organizados</li>
+            <li>Viajeros que buscan experiencias auténticas</li>
+        </ul>
+
+        <h3>Concepto de la Ruta</h3>
+        <p>
+            La Ruta Santandereana del Sabor es una experiencia sensorial que invita a 
+            descubrir los sabores tradicionales del departamento. A través de un recorrido 
+            que mezcla gastronomía, historia y cultura, los visitantes podrán conectar con 
+            la esencia santandereana en ambientes rurales, urbanos y patrimoniales.
         </p>
     </section>
 
+    <!-- SECCIÓN GASTRONOMÍA (ejemplos por ahora) -->
+    <section class="gastronomia">
+        <h2>Gastronomía Destacada</h2>
+        <div class="cards-container">
+
+            <div class="card">
+                <h3>Cabro con Pepitoria</h3>
+                <p>Plato representativo preparado con especias autóctonas y tradición ancestral.</p>
+            </div>
+
+            <div class="card">
+                <h3>Arepa Santandereana</h3>
+                <p>Arepa crocante de maíz pelado, símbolo gastronómico de la región.</p>
+            </div>
+
+            <div class="card">
+                <h3>Mute Santandereano</h3>
+                <p>Una sopa espesa con ingredientes típicos: maíz, papa, carnes y tradición.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RECORRIDO (lo llenamos cuando abra la hoja RECORRIDO) -->
+    <section class="recorrido">
+        <h2>Recorrido</h2>
+        <p>
+            Muy pronto aquí verás el mapa del recorrido, los municipios incluidos y los 
+            puntos gastronómicos destacados, basados en tu hoja “RECORRIDO”.
+        </p>
+    </section>
+
+    <!-- RECOMENDACIONES -->
+    <section class="recomendaciones">
+        <h2>Recomendaciones para Turistas</h2>
+        <ul>
+            <li>Usa ropa cómoda y bloqueador solar.</li>
+            <li>Hidrátate durante todo el recorrido.</li>
+            <li>Prueba platos locales en plazas y mercados.</li>
+            <li>Respeta espacios naturales y culturales.</li>
+        </ul>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
     <footer>
-        © 2025 Santander Sabor y Cultura — Proyecto Turístico
+        <p>Ruta Santandereana del Sabor © 2025 — Proyecto cultural y gastronómico</p>
     </footer>
+
 </body>
 </html>
