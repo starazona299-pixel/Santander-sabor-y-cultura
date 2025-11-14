@@ -1,69 +1,118 @@
-/* ESTILOS GENERALES */
-body {
-    font-family: Arial, sans-serif;
+/* -------------------------- */
+/*        ESTILOS BASE        */
+/* -------------------------- */
+
+* {
     margin: 0;
-    background: #f4f4f4;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f6f6f6;
     color: #333;
 }
 
-/* HERO / PORTADA */
+/* -------------------------- */
+/*        PORTADA / HERO      */
+/* -------------------------- */
+
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                url('https://source.unsplash.com/1600x900/?colombia,landscape') center/cover;
-    color: white;
-    padding: 120px 20px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    url("https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1200&q=60");
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
-.hero h1 {
+.hero-content h1 {
+    color: #fff;
     font-size: 3rem;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-.hero p {
+.hero-content p {
+    color: #fff;
     font-size: 1.2rem;
     margin-top: 10px;
 }
 
-/* SECCIONES */
+/* -------------------------- */
+/*      SECCIONES GENERALES   */
+/* -------------------------- */
+
 section {
-    max-width: 900px;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 60px auto;
+    max-width: 1000px;
+    padding: 0 20px;
 }
 
 h2 {
-    color: #0a6c5f;
+    font-size: 2rem;
+    color: #00796b;
+    margin-bottom: 20px;
+    border-left: 6px solid #ffca28;
+    padding-left: 12px;
 }
 
-/* TARJETAS DE GASTRONOMÍA */
-.cards-container {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* -------------------------- */
+/*     INFORMACIÓN GENERAL    */
+/* -------------------------- */
+
+.sobre p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
 }
 
-.card {
-    background: #fafafa;
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    transition: transform 0.2s;
+.sobre strong {
+    color: #00796b;
 }
 
-.card:hover {
-    transform: scale(1.03);
-    background: #e6fff3;
+/* -------------------------- */
+/*     RECORRIDO (TABLAS)     */
+/* -------------------------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-/* FOOTER */
+th {
+    background: #00796b;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    background: white;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:hover {
+    background: #e0f2f1;
+}
+
+/* -------------------------- */
+/*        FOOTER              */
+/* -------------------------- */
+
 footer {
-    text-align: center;
+    background: #004d40;
     padding: 20px;
-    margin-top: 40px;
-    background: #0a6c5f;
+    margin-top: 50px;
+    text-align: center;
     color: white;
 }
